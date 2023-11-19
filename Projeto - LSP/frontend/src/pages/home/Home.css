@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.card-conteudo{
+    width: 40em;
+    height: 40em;
+    border: 1px solid #ccc; 
+    border-radius: 20px; 
+    margin-right: 20px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #818185;
+    color: white;
+
+}
+
+.card-conteudo img {
+    width: auto;
+    height: 15em;
+    padding-top: 20px;
+}
+
+
+.card-conteudo button{
+    width: 15em;
+    height: 5em;
+    border-radius: 100px;
+    margin-top:10px;
+    background-color: #21a1b1;
+
+}
+
+
+.descrisao{
+    
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.3em;
+    
+}
+
+.descrisao p{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

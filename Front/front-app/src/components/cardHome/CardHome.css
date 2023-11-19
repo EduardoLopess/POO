@@ -1,0 +1,47 @@
+.card-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45em;
+    height: 645px;
+    border: solid 1px black;
+    text-align: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 35px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.4);
+    border: none;
+    background-color: rgb(13, 129, 172);
+   
+}
+
+.card-conteudo img {
+    max-width: 50%;
+    max-height: 50%; /* Ajuste a altura máxima conforme necessário */
+    width: auto;
+    height: auto;
+   
+    margin-bottom: 15px; /* Espaçamento opcional abaixo da imagem */
+}
+
+.descricao {
+    margin-bottom: auto;
+}
+
+.card-conteudo button {
+    width: 100%;
+    height: 2.5em;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+
+hr{
+    width: 100%;
+}

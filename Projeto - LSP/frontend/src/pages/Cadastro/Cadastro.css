@@ -1,0 +1,11 @@
+.cadastro-container{
+    width: 700px;
+    margin: 0 auto;
+    padding: 3em;
+    text-align: center;
+}
+
+.cadastro-container h1{
+    margin-bottom: 0.5em;
+}
+
