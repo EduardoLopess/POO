@@ -4,7 +4,7 @@ using Data;
 using Data.Repository;
 using Domain.Interfaces;
 using Domain.Services;
-using Domain.Services.Auth;
+
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -32,31 +32,6 @@ builder.Services.AddScoped<IVolunteeringRepository, VolunteeringRepository>();
 builder.Services.AddScoped<IDonationPointRepository, DonationPointRepository>();
 //builder.Services.AddScoped<IAuthService, AuthService>();
 
-builder.Services.AddAuthentication(opt =>
-    {
-        opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-        opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-        
-
-    }
-).AddJwtBearer(opt =>
-{
-    var configuration = builder.Configuration;
-    opt.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidateIssuerSigningKey = true,
-
-        ValidIssuer = configuration["Jwt:Issuer"],
-        ValidAudience = configuration["Jwt:Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(
-            Encoding.UTF8.GetBytes(configuration["Jwt: secretKey"])
-        ),
-        ClockSkew = TimeSpan.Zero
-    };
-});
 
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -73,10 +48,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+//app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseAuthentication();
+//app.UseAuthentication();
 
 app.Run();

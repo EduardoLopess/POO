@@ -11,12 +11,12 @@ namespace Domain.Entities
         public string PhoneNumber { get; set; }
         public string CPF { get; set; }
         public Gender Gender { get; set; }
-        
-        
+        public DateTime Birthdate { get; set; }
+
 
         public IList<Address> Addresses { get; set; }
         public IList<Volunteering> VolunteeringsSubscriber { get; set; }
         public Login Login { get; set; }
-    
+     
     }
 }

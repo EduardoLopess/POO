@@ -12,3 +12,7 @@ namespace Domain.Services.ServicesInterfaces
         Task<bool> RecoverPasswordAsync(string email);
     }
 }
+
+
+
+

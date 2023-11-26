@@ -17,6 +17,9 @@ const Header = () => {
                 <li className={`item ${location.pathname === '/' ? 'active' :  '' }`}>
                     <Link to="/" disabled={location.pathname === '/'}>Pagina Inicial</Link>
                 </li>
+                <li className={`item ${location.pathname === '/' ? 'active' :  '' }`}>
+                    <Link to="/doacao" disabled={location.pathname === '/doacao'}>doacao</Link>
+                </li>
 
                 <li className="item">
                     <Link to="sobre">Sobre</Link>

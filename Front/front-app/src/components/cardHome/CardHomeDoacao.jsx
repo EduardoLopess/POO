@@ -1,7 +1,10 @@
 import '../cardHome/CardHome.css'
 
 const CardCardHomeDoacao = () => {
+   
     const path = require('../../assets/doacao.png')
+
+    
     return(
         <div className="card-conteudo">
             <img src={path} alt="Doação"/>

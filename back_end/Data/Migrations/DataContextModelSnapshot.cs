@@ -167,11 +167,8 @@ namespace Data.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
-                    b.Property<byte[]>("PasswordHash")
-                        .HasColumnType("BLOB");
-
-                    b.Property<byte[]>("PasswordHashSalt")
-                        .HasColumnType("BLOB");
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("TEXT");
@@ -217,17 +214,17 @@ namespace Data.Migrations
                     b.Property<string>("Email")
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("Gender")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int?>("LoginId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
-                    b.Property<byte[]>("PasswordHash")
-                        .HasColumnType("BLOB");
-
-                    b.Property<byte[]>("PasswordHashSalt")
-                        .HasColumnType("BLOB");
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("TEXT");
@@ -251,20 +248,23 @@ namespace Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Benefit")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Description")
                         .HasColumnType("TEXT");
 
+                    b.Property<TimeSpan>("Duration")
+                        .HasColumnType("TEXT");
+
                     b.Property<int?>("InstituteId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Responsibilitys")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("Title")
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("TypeVolunteering")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
