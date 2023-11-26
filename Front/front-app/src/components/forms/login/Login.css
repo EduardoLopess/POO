@@ -138,6 +138,6 @@
 @media screen and (max-width: 768px) {
   .login-button button {
     width: 60vw; /* Ajuste para telas menores usando vw */
-    max-width: 100%; /* Ocupar largura total em telas menores */
+    max-width: 100%; 
   }
 }
