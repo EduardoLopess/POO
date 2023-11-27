@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO - git\\POO\\back_end\\Data\\Data.csproj": {}
+    "A:\\FACULDADE\\Nova pasta\\POO\\back_end\\Data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO - git\\POO\\back_end\\Data\\Data.csproj": {
+    "A:\\FACULDADE\\Nova pasta\\POO\\back_end\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO - git\\POO\\back_end\\Data\\Data.csproj",
+        "projectUniqueName": "A:\\FACULDADE\\Nova pasta\\POO\\back_end\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO - git\\POO\\back_end\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\dudul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO - git\\POO\\back_end\\Data\\obj\\",
+        "projectPath": "A:\\FACULDADE\\Nova pasta\\POO\\back_end\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\Edu\\.nuget\\packages\\",
+        "outputPath": "A:\\FACULDADE\\Nova pasta\\POO\\back_end\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dudul\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Edu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO - git\\POO\\back_end\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO - git\\POO\\back_end\\Domain\\Domain.csproj"
+              "A:\\FACULDADE\\Nova pasta\\POO\\back_end\\Domain\\Domain.csproj": {
+                "projectPath": "A:\\FACULDADE\\Nova pasta\\POO\\back_end\\Domain\\Domain.csproj"
               }
             }
           }
@@ -81,26 +83,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO - git\\POO\\back_end\\Domain\\Domain.csproj": {
+    "A:\\FACULDADE\\Nova pasta\\POO\\back_end\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO - git\\POO\\back_end\\Domain\\Domain.csproj",
+        "projectUniqueName": "A:\\FACULDADE\\Nova pasta\\POO\\back_end\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO - git\\POO\\back_end\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\dudul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\POO - git\\POO\\back_end\\Domain\\obj\\",
+        "projectPath": "A:\\FACULDADE\\Nova pasta\\POO\\back_end\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Edu\\.nuget\\packages\\",
+        "outputPath": "A:\\FACULDADE\\Nova pasta\\POO\\back_end\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dudul\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Edu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -126,6 +130,10 @@
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "SmartFormat.Extensions.Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[3.3.0, )"
             }
           },
           "imports": [
@@ -144,7 +152,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

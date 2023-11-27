@@ -33,6 +33,10 @@ const Header = () => {
                     <Link to="/entrar" disabled={location.pathname === '/entrar'}>Entrar</Link>
                 </li>
 
+                <li className={`item ${location.pathname === '/cadastro/instituto' ? 'active' : ''}`}>
+                    <Link to="/cadastro/instituto" disabled={location.pathname === '/cadastro/instituto'}>Registre seu instituto</Link>
+                </li>
+
                 <li className={`item ${location.pathname === '/cadastro' ? 'active' : ''}`}>
                     <Link to="/cadastro" disabled={location.pathname === '/cadastro'}>Cadastrar-se</Link>
                 </li>

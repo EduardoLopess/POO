@@ -7,8 +7,8 @@ const UserForms = () => {
         name: '',
         surname: '',
         phoneNumber: '',
-        CPF: '',
-        birthdate: '',
+        cpf: '',
+        birthdateString: '',
         gender: '',
         street: '',
         houseNumber: '',
@@ -23,10 +23,13 @@ const UserForms = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
+            
             const formDataWithAccess = {
                 ...formData,
+        
                 profileAccess: 1 // Defina o perfil de acesso como necessário (1, 2, etc.)
             };
+            console.log("Dados enviados:", formDataWithAccess);
             const response = await createUser(formDataWithAccess);
             console.log("Usuário criado", response);
             // Lógica adicional após a criação do usuário, se necessário
@@ -37,6 +40,7 @@ const UserForms = () => {
     };
 
     const handleChange = (e) => {
+        
         setFormData({
             ...formData,
             [e.target.id]: e.target.value
@@ -44,11 +48,24 @@ const UserForms = () => {
     };
 
     const handleGenderChange = (e) => {
+        const selectedValue = parseInt(e.target.value); // Converte o valor para número inteiro
+        let genderValue;
+    
+        // Mapeia o valor numérico para o enum Gender correspondente
+        if (selectedValue === 0) {
+            genderValue = 'Male';
+        } else if (selectedValue === 1) {
+            genderValue = 'Female';
+        } else if (selectedValue === 2) {
+            genderValue = 'Other';
+        }
+    
         setFormData({
             ...formData,
-            gender: e.target.value // Atualiza o estado do campo de gênero quando uma opção é selecionada
+            gender: genderValue // Atualiza o estado do campo de gênero com o membro correspondente ao valor selecionado
         });
     };
+    
 
 
     return (
@@ -78,24 +95,24 @@ const UserForms = () => {
                             />
                         </div>
                         <div className='custom-input-box'>
-                            <label htmlFor="CPF">CPF: </label>
-                            <input type="text" id="CPF" placeholder="Digite seu CPF" 
-                            value={formData.CPF} onChange={handleChange}
+                            <label htmlFor="cpf">CPF: </label>
+                            <input type="text" id="cpf" placeholder="Digite seu CPF" 
+                            value={formData.cpf} onChange={handleChange}
                             />
                         </div>
                         <div className='custom-input-box'>
-                            <label htmlFor="birthdate">Data de Nascimento:</label>
-                            <input type="date" id="birthdate" name="birthdate"
-                            value={formData.birthdate} onChange={handleChange}
+                            <label htmlFor="date">Data de Nascimento:</label>
+                            <input type="date" id="birthdateString" name="birthdate"
+                            value={formData.birthdateString} onChange={handleChange}
                             />
                         </div>
                         <div className='custom-input-box'>
                             <label htmlFor="gender">Gênero: </label>
                             <select id="gender" value={formData.gender} onChange={handleGenderChange}>
                                 <option value="">Selecione...</option>
-                                <option value="Male">Masculino</option>
-                                <option value="Female">Feminino</option>
-                                <option value="Other">Outro</option>
+                                <option value="0">Masculino</option>
+                                <option value="1">Feminino</option>
+                                <option value="2">Outro</option>
                             </select>
                         </div>
                         <div className='custom-input-box'>
