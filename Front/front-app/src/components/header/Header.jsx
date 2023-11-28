@@ -4,8 +4,7 @@ import { Link , useLocation  } from "react-router-dom";
 const Header = () => {
     const path = require('../../assets/logo.png')
     const location = useLocation();
-
-  
+   
     return(
         <header>
             <div className='logo'>
@@ -17,10 +16,6 @@ const Header = () => {
                 <li className={`item ${location.pathname === '/' ? 'active' :  '' }`}>
                     <Link to="/" disabled={location.pathname === '/'}>Pagina Inicial</Link>
                 </li>
-                <li className={`item ${location.pathname === '/' ? 'active' :  '' }`}>
-                    <Link to="/doacao" disabled={location.pathname === '/doacao'}>doacao</Link>
-                </li>
-
                 <li className="item">
                     <Link to="sobre">Sobre</Link>
                 </li>
@@ -28,6 +23,7 @@ const Header = () => {
                 <li className="item"> 
                     <Link to="contato">Contato</Link>
                 </li>
+                
 
                 <li className={`item ${location.pathname === '/entrar' ? 'active' : ''}`}>
                     <Link to="/entrar" disabled={location.pathname === '/entrar'}>Entrar</Link>

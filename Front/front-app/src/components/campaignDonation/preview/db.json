@@ -1,0 +1,61 @@
+{
+    "campanhas": [
+      {
+        "id": 1,
+        "titulo": "Campanha de Arrecadação de Alimentos",
+        "descricao": "Esta campanha visa arrecadar alimentos não perecíveis para distribuição entre famílias carentes da região. Queremos ajudar a combater a fome e promover o bem-estar.",
+        "dataInicio": "2023-12-01",
+        "dataTermino": "2023-12-15",
+        "contato": {
+          "email": "contato@campanhaalimentos.com",
+          "telefone": "(00) 1234-5678",
+          "site": "www.campanhaalimentos.com"
+        },
+        "localizacao": {
+          "rua": "Rua das Doações, 123",
+          "cidade": "Cidade Feliz",
+          "bairro": "Bairro Solidário"
+        },
+        "materiaisNecessarios": [
+          "Arroz",
+          "Feijão",
+          "Óleo de Cozinha",
+          "Macarrão",
+          "Leite em Pó"
+        ],
+        "formasDoacao": [
+          "Doações financeiras através do site",
+          "Entrega de alimentos nos pontos de coleta",
+          "Voluntariado para distribuição"
+        ]
+      },
+      {
+        "id": 5,
+        "titulo": "Campanha de Doação de Brinquedos",
+        "descricao": "Arrecadação de brinquedos para crianças carentes. Proporcionar alegria e diversão!",
+        "dataInicio": "2023-12-10",
+        "dataTermino": "2023-12-24",
+        "contato": {
+            "email": "contato@doacaobrinquedos.com",
+            "telefone": "(00) 3333-3333",
+            "site": "www.doacaobrinquedos.com"
+        },
+        "localizacao": {
+            "rua": "Rua da Diversão, 567",
+            "cidade": "Cidade Feliz",
+            "bairro": "Bairro da Alegria"
+        },
+        "materiaisNecessarios": [
+            "Bonecas",
+            "Carrinhos",
+            "Quebra-cabeças",
+            "Jogos Educativos"
+        ],
+        "formasDoacao": [
+            "Entrega de brinquedos nos postos de coleta"
+        ]
+    }
+      
+    ]
+  }
+  

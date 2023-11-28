@@ -1,4 +1,5 @@
 import '../cardHome/CardHome.css'
+import { Link } from 'react-router-dom';
 
 const CardCardHomeDoacao = () => {
    
@@ -15,7 +16,9 @@ const CardCardHomeDoacao = () => {
                 <p>Explore diversas campanhas de doação em andamento na sua região. Descubra como você pode fazer a diferença contribuindo com recursos financeiros, doando itens essenciais ou participando de eventos beneficentes. Além disso, encontre locais de coleta de materiais próximos a você. </p>
                 <p>Seja parte ativa da comunidade, ajudando a fornecer os recursos necessários para causas importantes e impactar positivamente a vida das pessoas ao seu redor.</p>
             </div>
-            <button>Explorar doações</button>
+            <Link to="/capanhas-de-doacao">
+                <button>Campanhas de doações</button>
+            </Link>
         </div>
 
     );

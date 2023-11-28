@@ -8,7 +8,7 @@ namespace Domain.ViewModels
         public TypeMaterial TypeMaterial { get; set; }
         public PriorityDonation PriorityDonation { get; set;}
         public DonationPointViewModel DonationPointViewModel { get; set; }
-        //public InstituteViewModel InstituteViewModel { get; set; }
+        public InstituteViewModel InstituteViewModel { get; set; }
 
     }
 }

@@ -16,24 +16,16 @@ const UserForms = () => {
         complement: '',
         zipCode: '',
         city: '',
+        userName: '',
         email: '',
-        passwordHash: ''
+        passwordHash: '',
+        passwordHashConfirm: ''
     });
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        try {
-            const formDataWithAccess = {
-                ...formData,
-                profileAccess: 1 // Defina o perfil de acesso como necessário (1, 2, etc.)
-            };
-            const response = await createUser(formDataWithAccess);
-            console.log("Usuário criado", response);
-            // Lógica adicional após a criação do usuário, se necessário
-        } catch (error) {
-            console.error('Erro ao criar usuário', error);
-            // Tratamento de erros
-        }
+        localStorage.setItem('formData', JSON.stringify(formData));
+        alert('Dados salvos localmente!');
     };
 
     const handleChange = (e) => {
@@ -46,7 +38,7 @@ const UserForms = () => {
     const handleGenderChange = (e) => {
         setFormData({
             ...formData,
-            gender: e.target.value // Atualiza o estado do campo de gênero quando uma opção é selecionada
+            gender: e.target.value 
         });
     };
 
@@ -97,6 +89,12 @@ const UserForms = () => {
                                 <option value="Female">Feminino</option>
                                 <option value="Other">Outro</option>
                             </select>
+                        </div>
+                        <div className='custom-input-box'>
+                            <label htmlFor="userName">Nome de usuario </label>
+                            <input type="text" id="userName" placeholder="Digite seu de usuario" 
+                            value={formData.userName} onChange={handleChange}
+                            />
                         </div>
                         <div className='custom-input-box'>
                             <label htmlFor="email">Seu e-mail: </label>
@@ -152,6 +150,12 @@ const UserForms = () => {
                             <label htmlFor="password">Sua senha: </label>
                             <input type="text" id="passwordHash" placeholder="Digite sua senha" 
                             value={formData.passwordHash} onChange={handleChange}
+                            />
+                        </div>
+                        <div className='custom-input-box'>
+                            <label htmlFor="passwordConfirm">Confirmar senha: </label>
+                            <input type="text" id="passwordHashConfirm" placeholder="Confirme sua senha" 
+                            value={formData.passwordHashConfirm} onChange={handleChange}
                             />
                         </div>
                     </div>

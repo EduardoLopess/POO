@@ -1,0 +1,46 @@
+.volunteeringPreview-container{
+    max-width: 350px;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    justify-content: center;
+}
+
+.title-volunteering{
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    justify-content: center;
+    background-color: blue;
+    width: 100%;
+    padding: 2em;
+    margin-bottom: 1em;
+    font-size: 0.8em;
+}
+
+.description-volunteering{
+    display: inline-block;
+    margin: 1.3em;
+}
+
+.tipe-volunteering{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    background-size: auto;
+    padding: 2em;
+    margin-bottom: 1em;
+    font-size: 0.8em;
+}
+
+.btn-volunterring-container{
+    display: flex;
+    border-radius: 2em;
+   justify-content: center;
+}
+
+.saibaMais-btn-Volunterring{
+    width: 100%;
+}

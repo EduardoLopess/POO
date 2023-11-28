@@ -1,0 +1,19 @@
+/* CampaignDonationPreview.css */
+
+.campaignPreview-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px; 
+    text-align: center;
+    background-color: #f9f9f9;
+    max-width: 300px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.saibaMais-btn {
+    padding: 8px 16px; 
+    font-size: 14px; 
+    margin-top: 10px; 
+}
