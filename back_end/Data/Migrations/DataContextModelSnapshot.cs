@@ -208,6 +208,9 @@ namespace Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("BirthdateString")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("CPF")
                         .HasColumnType("TEXT");
 

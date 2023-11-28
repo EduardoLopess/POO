@@ -32,3 +32,20 @@ C:\Users\dudul\OneDrive\Área de Trabalho\POO - git\POO\back_end\Data\obj\Debug\
 C:\Users\dudul\OneDrive\Área de Trabalho\POO - git\POO\back_end\Data\obj\Debug\net7.0\Data.pdb
 C:\Users\dudul\OneDrive\Área de Trabalho\POO - git\POO\back_end\Data\obj\Debug\net7.0\Data.genruntimeconfig.cache
 C:\Users\dudul\OneDrive\Área de Trabalho\POO - git\POO\back_end\Data\obj\Debug\net7.0\ref\Data.dll
+A:\FACULDADE\Nova pasta\POO\back_end\Data\bin\Debug\net7.0\Data.deps.json
+A:\FACULDADE\Nova pasta\POO\back_end\Data\bin\Debug\net7.0\Data.runtimeconfig.json
+A:\FACULDADE\Nova pasta\POO\back_end\Data\bin\Debug\net7.0\Data.dll
+A:\FACULDADE\Nova pasta\POO\back_end\Data\bin\Debug\net7.0\Data.pdb
+A:\FACULDADE\Nova pasta\POO\back_end\Data\bin\Debug\net7.0\Domain.dll
+A:\FACULDADE\Nova pasta\POO\back_end\Data\bin\Debug\net7.0\Domain.pdb
+A:\FACULDADE\Nova pasta\POO\back_end\Data\obj\Debug\net7.0\Data.csproj.AssemblyReference.cache
+A:\FACULDADE\Nova pasta\POO\back_end\Data\obj\Debug\net7.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+A:\FACULDADE\Nova pasta\POO\back_end\Data\obj\Debug\net7.0\Data.AssemblyInfoInputs.cache
+A:\FACULDADE\Nova pasta\POO\back_end\Data\obj\Debug\net7.0\Data.AssemblyInfo.cs
+A:\FACULDADE\Nova pasta\POO\back_end\Data\obj\Debug\net7.0\Data.csproj.CoreCompileInputs.cache
+A:\FACULDADE\Nova pasta\POO\back_end\Data\obj\Debug\net7.0\Data.csproj.CopyComplete
+A:\FACULDADE\Nova pasta\POO\back_end\Data\obj\Debug\net7.0\Data.dll
+A:\FACULDADE\Nova pasta\POO\back_end\Data\obj\Debug\net7.0\refint\Data.dll
+A:\FACULDADE\Nova pasta\POO\back_end\Data\obj\Debug\net7.0\Data.pdb
+A:\FACULDADE\Nova pasta\POO\back_end\Data\obj\Debug\net7.0\Data.genruntimeconfig.cache
+A:\FACULDADE\Nova pasta\POO\back_end\Data\obj\Debug\net7.0\ref\Data.dll
